@@ -47,9 +47,16 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+address {
+    font-style: normal;
+    margin-top: 20px;
+}
 button {
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
 }
 .section {
     padding-top: 94px;
@@ -59,7 +66,7 @@ button {
     padding-top: 0;
 }
 .container {
-   max-width: 1200px;
+   width: 1200px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 15px;
@@ -70,7 +77,7 @@ button {
 .page-header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px solid #ECECEC;
 }
 .menu-container {
     display: flex;
@@ -98,6 +105,7 @@ button {
     color: var(--primery-text-color);
 }
 .menu .link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -106,6 +114,7 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em; 
     color: var(--secondery-text-color);
+    padding: 32px 0;
 }
 .contact .link:hover,
 .contact .link:focus {
@@ -123,9 +132,11 @@ button {
     background-color: var(--background-footer-color);
     text-align: center;
     height: 600px;
+    padding: 200px 0;
 }
 .main-tittle {
-    margin-top: 104px;
+    width: 696px;
+    margin: 0 auto;
     font-weight: 900; 
     font-size: 44px;
     line-height: 1.36;
@@ -134,7 +145,9 @@ button {
     text-transform: uppercase;
 }
 .modal-open-btn{
-    margin-top: 40px;
+    margin-top: 30px;
+    padding: 10px 32px;
+    border-radius: 4px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -159,9 +172,15 @@ button {
     clip-path: inset(50%);
     margin: -1px;
 }
+.card-features {
+    flex-basis: calc((100%-90)/4);
+}
+
 .card {
     flex-basis: calc((100%-90)/4);
-
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .business-card {
     flex-basis: calc((100%-60)/3);
@@ -172,9 +191,7 @@ button {
 }
 .section-business-container {
     display: flex;
-    gap: 30px;
-    padding-inline-start: 0;
-    
+    gap: 30px;   
 }
 .main-subtittle {
     text-align: center;
@@ -187,7 +204,6 @@ button {
     background-color: var(--background-team-color);
 }
 .section-tittle {
-    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -196,12 +212,14 @@ button {
 .description-tittle {
     line-height: 1.71;
     color: var(--secondery-text-color);
+    font-size: 16px;
     margin-top: 10px;
     text-align: left;
 }
 .description-tittle-team {
     line-height: 1.71;
     color: var(--secondery-text-color);
+    font-size: 16px;
     margin-top: 10px;
     text-align: center;
 }
@@ -209,6 +227,10 @@ button {
     line-height: 1.88;
     color: var(--secondery-text-color);
     font-size: 16px;
+}
+.card-tittle {
+    padding: 30px 0;
+    text-align: center;
 }
 .section-team-container {
     display: flex;
@@ -219,11 +241,11 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19; 
-    margin-top: 30px;
     text-align: center;
 }
 
 .name-project {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -231,10 +253,12 @@ button {
     color: var(--primery-text-color);
 }
 .change-btn {
+    padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
+    letter-spacing: 0.03em;
     background-color: var(--background-team-color);
     color: var(--primery-text-color);
 }
@@ -246,10 +270,8 @@ button {
 /* footer */
 .footer {
     background-color: var(--background-footer-color);
-    height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
-    text-align: left;
 }
 .logo-footer {
     color:var(--accent-color) ;
@@ -265,8 +287,6 @@ button {
     margin-top: 0px;
 }
 .footer-info {
-    margin-top: 20px;
-    font-style: normal;
     line-height: 1.71; 
     color: var(--letter-color); 
 }
@@ -294,10 +314,9 @@ button {
     flex-wrap: wrap;
 }
 .link-border {
-     border: 1px solid #EEE; 
-    padding-left: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    border: 1px solid #EEE; 
+    border-top: none;
+    padding: 20px 24px;
 } 
 .card-work {
     flex-basis: calc((100% - 60)/3)   
