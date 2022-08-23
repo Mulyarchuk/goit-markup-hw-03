@@ -131,7 +131,7 @@ button {
 .main-section {
     background-color: var(--background-footer-color);
     text-align: center;
-    height: 600px;
+    /* height: 600px; */
     padding: 200px 0;
 }
 .main-tittle {
@@ -212,7 +212,6 @@ button {
 .description-tittle {
     line-height: 1.71;
     color: var(--secondery-text-color);
-    font-size: 16px;
     margin-top: 10px;
     text-align: left;
 }
